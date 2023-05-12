@@ -11,3 +11,22 @@
         @content;
     }
 }
+
+@font-face {
+    font-family: "Noto Sans Regular";
+    src: url(../../fonts/Noto_Sans\,Poppins/Noto_Sans/NotoSans-Regular.tff);
+  }
+
+@font-face {
+font-family: "Noto Sans Bold";
+src: url(../../fonts/Noto_Sans\,Poppins/Noto_Sans/NotoSans-Bold.tff);
+}
+@font-face {
+    font-family: "Poppins Regular";
+    src: url(../../fonts/Noto_Sans\,Poppins/Poppins/PoppinsRegular.tff);
+}
+
+@font-face {
+    font-family: "Indie Flower";
+    src: url(../../fonts/Indie_Flower/IndieFlower-Regular.ttf);
+  }
