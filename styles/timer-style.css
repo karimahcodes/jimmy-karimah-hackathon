@@ -54,6 +54,8 @@ body {
   display: flex;
   flex-direction: column;
   position: absolute;
+  width: 2rem;
+  height: 16rem;
 }
 .main__flame {
   height: 2.5rem;
