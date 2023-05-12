@@ -1,0 +1,80 @@
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
+
+
+body{
+    font-family: "Noto Sans Regular";
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: black;
+    align-items: center;
+    color: white;
+    
+    &__instructions-link{
+        text-decoration: none;
+        color: white;
+        margin: 1rem;
+    }
+    &__logo{
+        margin: 2rem;
+    }
+    &__stop-resume{
+        margin: 2rem;
+        height: 3rem;
+        width: 8rem;
+        // background-color: red; //revisit button styling
+    }
+}
+
+.main {
+    background-image: url(../assets/marble\ notebook.svg);
+    background-size: cover;
+    position: relative;
+    
+    &__visualizer{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        // width: 2rem;
+        // height: 16rem;
+    }
+
+    &__main__flame-candle{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 2rem;
+        height: 16rem;
+    }
+    &__flame{
+        height: 2.5rem;
+    }
+    &__candle{
+        background-color: rgb(226, 227, 222); //rgb(62, 44, 44);
+        width: 2rem;
+        height: 16rem;
+        border-radius: 30% 30% 0% 0%;
+        justify-self: center;        
+    }
+    &__notepad-section{
+        background-color: rgb(245, 231, 159);
+        height: 15rem;
+        width: 15rem;
+        margin: 0 auto;
+        justify-self: center;              
+    }
+    
+
+    &__input-container{
+        color: white;
+        background-color: black;
+
+    }
+&__list-item{
+        list-style-type: none;
+        }
+
+}

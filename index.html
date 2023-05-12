@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time to Play</title>
-    <link rel="stylesheet" href="timer-style.css">
+    <link rel="stylesheet" href="./styles/timer-style.css">
 </head>
 <body>
     <header class="header">
-        <a class="header__instructions-link">Instructions</a>
-        <h1 class="header__logo">Time to Play</h1>
+        <a class="header__instructions-link" href="#instructions">Instructions</a>
+        <h1 class="header__logo">Time t:0 Play</h1>
         <button class="header__stop-resume">Stop/Resume</button>
     </header>
     <main class="main">
-
+        <div class="main__visualizer">
+            <div class="main__flame-candle">
+                <img class="main__flame" src="./assets/CandleFlames/Flame2.svg" alt="candle-flame"/>
+                <div class="main__candle">   
+                </div>
         <div class="timer">
             <input type="number" id="countdownInput" min="1" class="timer__input">
         <button onclick="startCountdown()" class="timer__button">Begin</button>
@@ -42,13 +46,41 @@
                   <!--the height of the div = time remaining or the inverse of time elapsed on the 25-min timer-->
             </div>
         </div>
-        <form class="main__notepad">
+        <section class="main__notepad-section">
+            <h3 class="main__subheader">My To-Do List</h3>
             <ul class="main__checklist">
-                <li class="main__list-item"></li>
+                <li class="main__list-item"><input class="main__checkbox" type="checkbox">Brief Task Description</li>
+                <li class="main__list-item"><input class="main__checkbox" type="checkbox">Task 2</li>                
+                <li class="main__list-item"><input class="main__checkbox" type="checkbox">Task 3</li>
+                <li class="main__list-item"><input class="main__checkbox" type="checkbox">Task 4</li>
             </ul>
-        </div>
-
+        </section>
     </main>
+    <section class="main__input-container">
+        <div class="main__details-boxes">
+            <p class="main__details">
+                <span class="main__details--bold">Time until Play:</span> 
+            </p>
+            <p class="main__details">
+                <span class="main__details--bold">Next Task:</span>
+            </p>
+        </div>
+        <form class="main__user-inputs">
+            <label for="keyword" class="main__keyword-label">Video Search by Keyword:</label>
+            <input id="main__keyword-input" type="text" name="keyword" placeholder="e.g., 'cat' or 'Beyonce'">
+            <br>
+            <label for="new-task" class="main__newtask-label">Add a Task to the List:</label>
+            <input id="main__add-task" type="text" name="new-task" placeholder="code for 25 minutes">
+        </form>
+    </section>
+    <section id="instructions">
+        <h2 class="instructions__header">How to use Time t:0 Play</h2>
+        <p class="instructions__description">Time t:0 Play is a pomodoro timer that allows you to add items to a to-do list, and view the time remaining until you can relax with a bit of play. 
+
+
+
+        </p>
+    </section>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="./timer.js"></script>

@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Noto Sans Regular";
+  src: url(../../fonts/Noto_Sans\,Poppins/Noto_Sans/NotoSans-Regular.tff);
+}
+@font-face {
+  font-family: "Noto Sans Bold";
+  src: url(../../fonts/Noto_Sans\,Poppins/Noto_Sans/NotoSans-Bold.tff);
+}
+@font-face {
+  font-family: "Poppins Regular";
+  src: url(../../fonts/Noto_Sans\,Poppins/Poppins/PoppinsRegular.tff);
+}
+@font-face {
+  font-family: "Indie Flower";
+  src: url(../../fonts/Indie_Flower/IndieFlower-Regular.ttf);
+}
+body {
+  font-family: "Noto Sans Regular";
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: black;
+  align-items: center;
+  color: white;
+}
+.header__instructions-link {
+  text-decoration: none;
+  color: white;
+  margin: 1rem;
+}
+.header__logo {
+  margin: 2rem;
+}
+.header__stop-resume {
+  margin: 2rem;
+  height: 3rem;
+  width: 8rem;
+}
+
+.main {
+  background-image: url(../assets/marble\ notebook.svg);
+  background-size: cover;
+  position: relative;
+}
+.main__visualizer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.main__main__flame-candle {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 2rem;
+  height: 16rem;
+}
+.main__flame {
+  height: 2.5rem;
+}
+.main__candle {
+  background-color: rgb(226, 227, 222);
+  width: 2rem;
+  height: 16rem;
+  border-radius: 30% 30% 0% 0%;
+  justify-self: center;
+}
+.main__notepad-section {
+  background-color: rgb(245, 231, 159);
+  height: 15rem;
+  width: 15rem;
+  margin: 0 auto;
+  justify-self: center;
+}
+.main__input-container {
+  color: white;
+  background-color: black;
+}
+.main__list-item {
+  list-style-type: none;
+}/*# sourceMappingURL=timer-style.css.map */
