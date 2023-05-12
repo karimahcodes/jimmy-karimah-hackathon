@@ -40,44 +40,48 @@ body {
   width: 8rem;
 }
 
-.main {
+.top {
   background-image: url(../assets/marble\ notebook.svg);
   background-size: cover;
   position: relative;
 }
-.main__visualizer {
+.top__visualizer {
   display: flex;
   flex-direction: column;
   position: absolute;
 }
-.main__main__flame-candle {
+.top__flame-candle {
   display: flex;
   flex-direction: column;
   position: absolute;
   width: 2rem;
   height: 16rem;
 }
-.main__flame {
+.top__flame {
   height: 2.5rem;
 }
-.main__candle {
+.top__candle {
   background-color: rgb(226, 227, 222);
   width: 2rem;
   height: 16rem;
   border-radius: 30% 30% 0% 0%;
   justify-self: center;
 }
-.main__notepad-section {
+.top__notepad-section {
   background-color: rgb(245, 231, 159);
   height: 15rem;
   width: 15rem;
   margin: 0 auto;
   justify-self: center;
 }
-.main__input-container {
+.top__input-container {
   color: white;
   background-color: black;
 }
-.main__list-item {
+.top__list-item {
   list-style-type: none;
+}
+
+.main__catpic {
+  height: 25rem;
 }/*# sourceMappingURL=timer-style.css.map */

@@ -1,6 +1,8 @@
 let songList = [
-    'https://www.youtube.com/embed/wxAZfLenfa0?list=RDwxAZfLenfa0',
-    'https://www.youtube.com/embed/b6Qp25T48GE?list=RDb6Qp25T48GE'];
+    'https://www.youtube.com/embed/wxAZfLenfa0?list=RDwxAZfLenfa0&autoplay=1',
+    'https://www.youtube.com/embed/b6Qp25T48GE?list=RDb6Qp25T48GE&autoplay=1',
+    'https://www.youtube.com/watch?v=e82VE8UtW8A&autoplay=1'
+];
 
 let countdownTimer = null;
 
@@ -54,8 +56,9 @@ axios
     `).then(response => {
         let info = response.data;
         console.log(info);
-        let picContainer = document.querySelector('.catpic');
+        let picContainer = document.querySelector('.main__catpic-container');
         let image = document.createElement('img');
+        // image.classList.add("main__catpic");
         image.src = info[0].url;
         picContainer.appendChild(image);
         console.log(info[0].url)

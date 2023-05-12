@@ -13,46 +13,22 @@
         <h1 class="header__logo">Time t:0 Play</h1>
         <button class="header__stop-resume">Stop/Resume</button>
     </header>
-    <main class="main">
-        <div class="main__visualizer">
-            <div class="main__flame-candle">
-                <img class="main__flame" src="./assets/CandleFlames/Flame2.svg" alt="candle-flame"/>
-                <div class="main__candle">   
+    <main class="top">
+        <div class="top__visualizer">
+            <div class="top__flame-candle">
+                <img class="top__flame" src="./assets/CandleFlames/Flame2.svg" alt="candle-flame"/>
+                <div class="top__candle">   
                 </div>
-        <div class="timer">
-            <input type="number" id="countdownInput" min="1" class="timer__input">
-        <button onclick="startCountdown()" class="timer__button">Begin</button>
-        <div id="countdownDisplay" class="timer__display"></div>
-        </div>
-        
-        <!-- <div class="player">
-            <iframe width="797" height="448" src="https://youtube.com" title="A performance that only shows 5% of the goodness of the Gretsch guitar." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div> -->
-
-        <div class="catpic">
-        </div>
-
-        <div class="playlist">
-            <form for="songToAdd" id="form">
-
-                <input type="text" name="songToAdd" class="playlist__input">
-                <button class="playlist__add-song-button" type="submit">Add Song</button>
-            </form>
-            </div>
-
-        <div class="main__candle">
-            <img src="./assets/CandleFlames/Flame2.svg" alt="candle-flame"/>
-            <div class="main__candle-wax">   
-                  <!--the height of the div = time remaining or the inverse of time elapsed on the 25-min timer-->
             </div>
         </div>
-        <section class="main__notepad-section">
-            <h3 class="main__subheader">My To-Do List</h3>
-            <ul class="main__checklist">
-                <li class="main__list-item"><input class="main__checkbox" type="checkbox">Brief Task Description</li>
-                <li class="main__list-item"><input class="main__checkbox" type="checkbox">Task 2</li>                
-                <li class="main__list-item"><input class="main__checkbox" type="checkbox">Task 3</li>
-                <li class="main__list-item"><input class="main__checkbox" type="checkbox">Task 4</li>
+
+        <section class="top__notepad-section">
+            <h3 class="top__subheader">My To-Do List</h3>
+            <ul class="top__checklist">
+                <li class="top__list-item"><input class="top__checkbox" type="checkbox">Brief Task Description</li>
+                <li class="main__list-item"><input class="top__checkbox" type="checkbox">Task 2</li>                
+                <li class="top__list-item"><input class="top__checkbox" type="checkbox">Task 3</li>
+                <li class="top__list-item"><input class="top__checkbox" type="checkbox">Task 4</li>
             </ul>
         </section>
     </main>
@@ -72,18 +48,31 @@
             <label for="new-task" class="main__newtask-label">Add a Task to the List:</label>
             <input id="main__add-task" type="text" name="new-task" placeholder="code for 25 minutes">
         </form>
+        <div class="main__timer">
+            <input type="number" id="countdownInput" min="1" class="timer__input">
+            <button onclick="startCountdown()" class="timer__button">Begin</button>
+            <div id="countdownDisplay" class="timer__display">   
+            </div>
+        </div>
+        <div class="main__catpic-container">
+        </div>
+
+        <div class="playlist">
+            <form for="songToAdd" id="form">
+
+                <input type="text" name="songToAdd" class="playlist__input">
+                <button class="playlist__add-song-button" type="submit">Add Song</button>
+            </form>
+        </div>
     </section>
     <section id="instructions">
         <h2 class="instructions__header">How to use Time t:0 Play</h2>
-        <p class="instructions__description">Time t:0 Play is a pomodoro timer that allows you to add items to a to-do list, and view the time remaining until you can relax with a bit of play. 
-
-
-
+        <p class="instructions__description">Time t:0 Play is a pomodoro timer that allows you to add items to a to-do list, and view the time remaining until you can relax with a bit of play.
         </p>
     </section>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="./timer.js"></script>
-<script src="scripts.js"></script>
+
+<script src="./scripts.js"></script>
 </html>
 

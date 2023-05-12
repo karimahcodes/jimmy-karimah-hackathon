@@ -29,7 +29,7 @@ body{
     }
 }
 
-.main {
+.top {
     background-image: url(../assets/marble\ notebook.svg);
     background-size: cover;
     position: relative;
@@ -42,7 +42,7 @@ body{
         // height: 16rem;
     }
 
-    &__main__flame-candle{
+    &__flame-candle{
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -73,8 +73,14 @@ body{
         background-color: black;
 
     }
-&__list-item{
-        list-style-type: none;
-        }
+    &__list-item{
+            list-style-type: none;
+            }
+    
+}
 
+.main{
+    &__catpic{
+            height: 25rem;
+    }
 }
