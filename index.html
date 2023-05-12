@@ -14,6 +14,14 @@
         <button class="header__stop-resume">Stop/Resume</button>
     </header>
     <main class="main">
+
+        <div class="timer">
+            <input type="number" id="countdownInput" min="1" class="timer__input">
+        <button onclick="startCountdown()" class="timer__button">Begin</button>
+        <div id="countdownDisplay" class="timer__display"></div>
+        </div>
+        
+
         <div class="main__candle">
             <img src="./assets/CandleFlames/Flame2.svg" alt="candle-flame"/>
             <div class="main__candle-wax">   
@@ -27,6 +35,7 @@
         </div>
 
     </main>
+    <script src="./timer.js"></script>
 </body>
 <script src="script.js"></script>
 </html>
