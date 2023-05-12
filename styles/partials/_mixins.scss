@@ -1,0 +1,13 @@
+//tablet responsive mixin
+@mixin tablet {
+    @media (min-width: $tablet-width) {
+        @content;
+    }
+}
+
+//desktop responsive mixin
+@mixin desktop {
+    @media (min-width: $desktop-width) {
+        @content;
+    }
+}
