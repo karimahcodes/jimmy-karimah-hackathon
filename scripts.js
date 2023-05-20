@@ -37,6 +37,21 @@ function startCountdown() {
 
 function timeUp() {
     console.log("Play a song");
+    axios
+    .get(`https://api.thecatapi.com/v1/images/search?limit=10
+    `).then(response => {
+        let info = response.data;
+        console.log(info);
+        let picContainer = document.querySelector('.main__catpic-container');
+        let image = document.createElement('img');
+        // image.classList.add("main__catpic");
+        image.src = info[0].url;
+        picContainer.appendChild(image);
+        console.log(info[0].url)
+        .catch(err =>{
+            console.log(err);
+        })
+    })   
 }
 
 function selectVideo() {
@@ -51,15 +66,3 @@ form.addEventListener('submit', (event) => {
 })
 
 
-axios
-    .get(`https://api.thecatapi.com/v1/images/search?limit=10
-    `).then(response => {
-        let info = response.data;
-        console.log(info);
-        let picContainer = document.querySelector('.main__catpic-container');
-        let image = document.createElement('img');
-        // image.classList.add("main__catpic");
-        image.src = info[0].url;
-        picContainer.appendChild(image);
-        console.log(info[0].url)
-    })
