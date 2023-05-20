@@ -14,22 +14,43 @@
   font-family: "Indie Flower";
   src: url(../../fonts/Indie_Flower/IndieFlower-Regular.ttf);
 }
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: "Noto Sans Regular";
+  font-family: "Noto Sans Regular", arial, sans-serif;
 }
 
 .header {
+  background-image: url(../assets/marble\ notebook.svg);
+  background-size: cover 75%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__nav {
+  height: 3rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  background: black;
+  justify-content: space-between;
   align-items: center;
+  background-color: black;
   color: white;
 }
 .header__instructions-link {
   text-decoration: none;
-  color: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(246, 224, 116);
   margin: 1rem;
+  height: 3rem;
+  width: 8rem;
 }
 .header__logo {
   margin: 2rem;
@@ -38,41 +59,58 @@ body {
   margin: 2rem;
   height: 3rem;
   width: 8rem;
+  background-color: #FF0000;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .top {
-  background-image: url(../assets/marble\ notebook.svg);
-  background-size: cover;
+  background-image: url(../assets/journals/pexels-karolina-grabowska-8947463.jpg);
+  background-size: 75%;
+  background-position: center;
+  background-color: black;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 75vh;
+  font-family: "Indie Flower", Arial, sans-serif;
+  line-height: 1.9rem;
 }
 .top__visualizer {
   display: flex;
   flex-direction: column;
   position: absolute;
+  margin: 0 0.5rem;
+  border: 2px solid red;
+  right: 3vw;
+  height: 95%;
+  width: 2vw;
 }
 .top__flame-candle {
   display: flex;
   flex-direction: column;
   position: absolute;
-  width: 2rem;
-  height: 16rem;
+  height: 90%;
 }
 .top__flame {
   height: 2.5rem;
 }
 .top__candle {
   background-color: rgb(226, 227, 222);
-  width: 2rem;
-  height: 16rem;
+  width: 90%;
+  height: 100%;
   border-radius: 30% 30% 0% 0%;
   justify-self: center;
 }
 .top__notepad-section {
-  background-color: rgb(245, 231, 159);
-  height: 15rem;
-  width: 15rem;
+  height: 85%;
+  width: 35%;
   margin: 0 auto;
   justify-self: center;
+  transform: rotate(3.75deg);
+  translate: 5% 10%;
+  border: 2px orange dashed;
 }
 .top__input-container {
   color: white;

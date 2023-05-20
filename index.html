@@ -9,11 +9,14 @@
 </head>
 <body>
     <header class="header">
-        <a class="header__instructions-link" href="#instructions">Instructions</a>
-        <h1 class="header__logo">Time t:0 Play</h1>
-        <button class="header__stop-resume">Stop/Resume</button>
+        <nav class="header__nav">
+            <a class="header__instructions-link" href="#instructions">Instructions</a>
+            <h1 class="header__logo">Time t:0 Play</h1>
+            <button class="header__stop-resume">Stop/Resume</button>
+        </nav>
     </header>
     <main class="top">
+        <!-- rename class block to ToDoList and parent container tags across front and back end -->
         <div class="top__visualizer">
             <div class="top__flame-candle">
                 <img class="top__flame" src="./assets/CandleFlames/Flame2.svg" alt="candle-flame"/>
@@ -25,18 +28,18 @@
         <section class="top__notepad-section">
             <h3 class="top__subheader">My To-Do List</h3>
             <ul class="top__checklist">
-                <li class="top__list-item"><input class="top__checkbox" type="checkbox">Brief Task Description</li>
-                <li class="main__list-item"><input class="top__checkbox" type="checkbox">Task 2</li>                
-                <li class="top__list-item"><input class="top__checkbox" type="checkbox">Task 3</li>
-                <li class="top__list-item"><input class="top__checkbox" type="checkbox">Task 4</li>
+                <li class="top__list-item"><input class="top__checkbox" type="checkbox">Brief Task Description like "code for 30"</li>
+                <li class="main__list-item"><input class="top__checkbox" type="checkbox">Task 2 - "research" cool plant videos</li>                
+                <li class="top__list-item"><input class="top__checkbox" type="checkbox">Task 3 - prepare lunch for tomorrow</li>
+                <li class="top__list-item"><input class="top__checkbox" type="checkbox">Task 4 - lookup dog videos--again, for "research"</li>
             </ul>
         </section>
     </main>
     <section class="main__input-container">
         <div class="main__details-boxes">
-            <p class="main__details">
+            <!-- <p class="main__details">
                 <span class="main__details--bold">Time until Play:</span> 
-            </p>
+            </p> -->
             <p class="main__details">
                 <span class="main__details--bold">Next Task:</span>
             </p>
@@ -49,7 +52,7 @@
             <input id="main__add-task" type="text" name="new-task" placeholder="code for 25 minutes">
         </form>
         <div class="main__timer">
-            <input type="number" id="countdownInput" min="1" class="timer__input">
+            <input type="number" id="countdownInput" min="1" class="timer__input" placeholder="how much time?">
             <button onclick="startCountdown()" class="timer__button">Begin</button>
             <div id="countdownDisplay" class="timer__display">   
             </div>
@@ -60,14 +63,14 @@
         <div class="playlist">
             <form for="songToAdd" id="form">
 
-                <input type="text" name="songToAdd" class="playlist__input">
+                <input type="text" name="songToAdd" class="playlist__input" placeholder="e.g. https://www.youtube.com/">
                 <button class="playlist__add-song-button" type="submit">Add Song</button>
             </form>
         </div>
     </section>
     <section id="instructions">
         <h2 class="instructions__header">How to use Time t:0 Play</h2>
-        <p class="instructions__description">Time t:0 Play is a pomodoro timer that allows you to add items to a to-do list, and view the time remaining until you can relax with a bit of play.
+        <p class="instructions__description">Time t:0 Play is a pomodoro timer that allows you to add items to a to-do list, and view the time remaining until you can relax with a bit of play. Tell us how much time you'd like to spend on the task. Then click begin.
         </p>
     </section>
 </body>
