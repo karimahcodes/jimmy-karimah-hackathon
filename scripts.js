@@ -55,7 +55,7 @@ function timeUp() {
 }
 
 function selectVideo() {
-    window.open(songList[Math.floor(Math.random(songList.length))], '_blank');
+    window.open(songList[Math.floor(Math.random() * songList.length)], '_blank');
 }
 
 const form = document.querySelector('#form')
