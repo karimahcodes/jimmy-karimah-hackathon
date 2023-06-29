@@ -21,11 +21,12 @@ function startCountdown() {
     }
     
     countdownTimer = setInterval(function() {
-        if (countdownTime <= 0) {
+        (countdownTime <= 0) ? {
             clearInterval(countdownTimer);
             timeUp();
             selectVideo();
-        } else {
+            }
+        : {
             countdownDisplay.innerText = `Time left: ${countdownTime} seconds`;
             countdownTime--
             progress = countdownTimer/countdownTimeStart;
